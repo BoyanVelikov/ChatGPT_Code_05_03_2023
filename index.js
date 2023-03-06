@@ -13,3 +13,12 @@ function sumEvenNumbers(numbers) {
   // Return the sum of even numbers
   return sum;
 }
+
+
+const findLongestWord = sentence => {
+  const words = sentence.split(' ');
+  const longestWord = words.reduce((longest, current) => {
+    return current.length > longest.length ? current : longest;
+  }, '');
+  return longestWord;
+}
