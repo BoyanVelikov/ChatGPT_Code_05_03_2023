@@ -21,4 +21,26 @@ const findLongestWord = sentence => {
     return current.length > longest.length ? current : longest;
   }, '');
   return longestWord;
+};
+
+function createCounter() {
+  let count = 0;
+  
+  function increment() {
+    count++;
+    console.log(count);
+  }
+  
+  function decrement() {
+    count--;
+    console.log(count);
+  }
+  
+  return { increment, decrement };
 }
+
+const counter = createCounter();
+counter.increment(); // logs 1
+counter.increment(); // logs 2
+counter.decrement(); // logs 1
+
