@@ -44,3 +44,14 @@ counter.increment(); // logs 1
 counter.increment(); // logs 2
 counter.decrement(); // logs 1
 
+/**
+ * Returns the intersection of two arrays.
+ * @param {Array} arr1 - The first array.
+ * @param {Array} arr2 - The second array.
+ * @returns {Array} - The intersection of the two arrays.
+ */
+function getIntersection(arr1, arr2) {
+  const set1 = new Set(arr1);
+  const intersection = arr2.filter((elem) => set1.has(elem));
+  return intersection;
+}
