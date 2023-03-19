@@ -55,3 +55,9 @@ function getIntersection(arr1, arr2) {
   const intersection = arr2.filter((elem) => set1.has(elem));
   return intersection;
 }
+
+
+function isEqualAndSameType(a, b) {
+  return a === b && typeof a === typeof b;
+}
+
